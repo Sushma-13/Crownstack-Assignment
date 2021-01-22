@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg  bg-light">
+    <a class="navbar-brand text-center" routerLink="/">Rental Management System</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle " id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    {{selectedLocation?selectedLocation:'Select Location'}}
+                </a>
+                <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="navbarDropdown">
+                    <li class="dropdown-submenu" *ngFor="let location of catalogData.data.locations">
+                        <a class="dropdown-item">{{location.name}}</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item" *ngFor="let branch of location.branches"
+                                (click)="selectBranch(branch,location.name)">
+                                <a [routerLink]="['branch', branch.branch_id]">{{branch.name}}</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>

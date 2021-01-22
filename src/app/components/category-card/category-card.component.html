@@ -1,0 +1,7 @@
+<div class="card">
+    <img src="{{type===1?'../../../assets/category/':'../../../assets/category/subcategory/'}}{{categoryDetails.image}}"
+        class="card-img-top" alt="Image Unavailable" *ngIf="categoryDetails.image">
+    <div class="card-body text-center">
+        <p class="card-text">{{categoryDetails.name}}</p>
+    </div>
+</div>

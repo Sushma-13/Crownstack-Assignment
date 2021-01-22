@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', async () => {
     await page.navigateTo();
-    expect(await page.getTitleText()).toEqual('caavo app is running!');
+    expect(await page.getTitleText()).toEqual('crownstack app is running!');
   });
 
   afterEach(async () => {

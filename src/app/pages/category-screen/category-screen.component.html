@@ -1,0 +1,11 @@
+<ol class="breadcrumb mx-auto" *ngIf="categories">
+    <li class="breadcrumb-item " [ngClass]="type===1?'active':''" (click)="showCategories()"><a>{{branch?.name}}</a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page" *ngIf="type===2">{{selectedSubCategory}}</li>
+</ol>
+<div class="row mx-auto">
+    <div class="col-3" (click)="showSubcategories(category)" *ngFor="let category of categories">
+        <app-category-card [type]="type" [categoryDetails]="category">
+        </app-category-card>
+    </div>
+</div>

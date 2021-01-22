@@ -1,0 +1,31 @@
+.breadcrumb {
+    background-color: white !important;
+    width: 90%;
+    padding-left: 1rem;
+}
+
+.col-3 {
+    padding: 1rem 0 1rem 1rem;
+}
+
+.row {
+    width: 90%;
+    padding: 1rem 0 1rem 1rem;}
+
+.breadcrumb{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.breadcrumb-item {
+    color: #6c757d;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: ">";
+}
+
+.breadcrumb-item.active {
+    color: #6c757d;
+    font-weight: bold;
+}
