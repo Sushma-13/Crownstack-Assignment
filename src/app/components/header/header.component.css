@@ -2,7 +2,7 @@
     background-color: teal !important;
 }
 
-.navbar-brand, .nav-link{
+.navbar-brand, .nav-link, .navbar-toggler-icon{
     color: white;
 }
 
@@ -28,7 +28,7 @@ a{
     display: block;
 }
 
-.dropdown-submenu>a:after {
+.dropdown-submenu>a:after{
     display: block;
     content: " ";
     float: right;

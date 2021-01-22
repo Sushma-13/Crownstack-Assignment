@@ -4,12 +4,11 @@
     transition: 1s;
 }
 .card{
-    width: 15rem;
+    /* width: 15rem; */
     padding: 0.5rem;
     color: rgba(20, 15, 15, 0.445);
     border-radius: 0;
     font-weight: bolder;
-    /* border-color: black; */
 }
 
 .card-img-top{

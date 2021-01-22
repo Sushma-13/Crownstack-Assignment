@@ -4,7 +4,7 @@
     <li class="breadcrumb-item active" aria-current="page" *ngIf="type===2">{{selectedSubCategory}}</li>
 </ol>
 <div class="row mx-auto">
-    <div class="col-3" (click)="showSubcategories(category)" *ngFor="let category of categories">
+    <div class="col col-sm-12 col-md-4 col-lg-3" (click)="showSubcategories(category)" *ngFor="let category of categories">
         <app-category-card [type]="type" [categoryDetails]="category">
         </app-category-card>
     </div>
